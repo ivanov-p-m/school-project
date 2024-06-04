@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="css/FCC_Photo_gallery_styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>css flexbox галерия</h1>
+    </header>
+        <!-- NavBar Start -->
+        <nav>
+          <ul class="sidebar">
+            <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+            <li><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+            <li><a href="FCC_Menu.html">Кафе Меню</a></li>
+            <li><a href="FCC_Photo_gallery.html">Галерия</a></li>
+            <li><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+            <li><a href="FCC_Survey Form.html">Анкета</a></li>
+        </ul>
+        <ul>
+            <li><a href="index_new.html">Начало</a></li>
+            <li class="hideOnMobile"><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+            <li class="hideOnMobile"><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+            <li class="hideOnMobile"><a href="FCC_Menu.html">Кафе Меню</a></li>
+            <li class="hideOnMobile"><a href="FCC_Photo_gallery.html">Галерия</a></li>
+            <li class="hideOnMobile"><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+            <li class="hideOnMobile"><a href="FCC_Survey Form.html">Анкета</a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+        </nav>
+    <div class="gallery">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/1.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/2.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/3.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/4.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/5.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/6.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/7.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/8.jpg">
+      <img src="https://cdn.freecodecamp.org/curriculum/css-photo-gallery/9.jpg">
+    </div>
+    <script>
+      function showSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+      }
+
+      function hideSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>

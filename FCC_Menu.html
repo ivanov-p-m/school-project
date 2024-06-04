@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <link href="css/FCC_Menu_Styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="navigation">
+    <h1>Кафе Меню</h1>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+        <li><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+        <li><a href="FCC_Menu.html">Кафе Меню</a></li>
+        <li><a href="FCC_Photo_gallery.html">Галерия</a></li>
+        <li><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+        <li><a href="FCC_Survey Form.html">Анкета</a></li>
+      </ul>
+      <ul>
+        <li><a href="index_new.html">Начало</a></li>
+        <li class="hideOnMobile"><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+        <li class="hideOnMobile"><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+        <li class="hideOnMobile"><a href="FCC_Menu.html">Кафе Меню</a></li>
+        <li class="hideOnMobile"><a href="FCC_Photo_gallery.html">Галерия</a></li>
+        <li class="hideOnMobile"><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+        <li class="hideOnMobile"><a href="FCC_Survey Form.html">Анкета</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+    </header>
+    <div class="menu">
+      <main>
+        <h1>CAMPER CAFE</h1>
+        <p class="established">Est. 2020</p>
+        <hr>
+        <section>
+          <h2>Coffee</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon"/>
+          <article class="item">
+            <p class="flavor">French Vanilla</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Caramel Macchiato</p><p class="price">3.75</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Pumpkin Spice</p><p class="price">3.50</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Hazelnut</p><p class="price">4.00</p>
+          </article>
+          <article class="item">
+            <p class="flavor">Mocha</p><p class="price">4.50</p>
+          </article>
+        </section>
+        <section>
+          <h2>Desserts</h2>
+          <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon"/>
+          <article class="item">
+            <p class="dessert">Donut</p><p class="price">1.50</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cherry Pie</p><p class="price">2.75</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cheesecake</p><p class="price">3.00</p>
+          </article>
+          <article class="item">
+            <p class="dessert">Cinnamon Roll</p><p class="price">2.50</p>
+          </article>
+        </section>
+      </main>
+      <hr class="bottom-line">
+      <footer>
+        <p>
+          <a href="https://www.freecodecamp.org" target="_blank">Visit our website</a>
+        </p>
+        <p class="address">123 Free Code Camp Drive</p>
+      </footer>
+    </div>
+    <!-- NavBar JS -->
+    <script>
+      function showSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'flex'
+      }
+
+      function hideSidebar() {
+          const sidebar = document.querySelector('.sidebar')
+          sidebar.style.display = 'none'
+      }
+    </script>
+    <!-- NavBar End -->
+  </body>
+</html>

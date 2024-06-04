@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="bg">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/style.css"/>
+        <title>Моята страница</title>
+    </head>
+    <body>
+        <header>
+            <h1>Портфолио</h1>
+        <!-- NavBar Start -->
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+                <li><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+                <li><a href="FCC_Menu.html">Кафе Меню</a></li>
+                <li><a href="FCC_Photo_gallery.html">Галерия</a></li>
+                <li><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+                <li><a href="FCC_Survey Form.html">Анкета</a></li>
+            </ul>
+            <ul>
+                <li><a href="index_new.html">Начало</a></li>
+                <li class="hideOnMobile"><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+                <li class="hideOnMobile"><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+                <li class="hideOnMobile"><a href="FCC_Menu.html">Кафе Меню</a></li>
+                <li class="hideOnMobile"><a href="FCC_Photo_gallery.html">Галерия</a></li>
+                <li class="hideOnMobile"><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+                <li class="hideOnMobile"><a href="FCC_Survey Form.html">Анкета</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+            </ul>
+        </nav>
+        <script>
+            function showSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'flex'
+            }
+
+            function hideSidebar() {
+                const sidebar = document.querySelector('.sidebar')
+                sidebar.style.display = 'none'
+            }
+        </script>
+        <!-- NavBar End -->
+        </header>
+        <main>
+        <h1>Михаил Иванов</h1>
+        <h2>233010005</h2>
+        <!--факултетен номер-->
+        <a class="logo" href="https://www.vfu.bg/" target="_blank"><img src="https://do.vfu.bg/pluginfile.php/1/theme_academi/logo/1705496990/vfu_logo.jpg" alt="VFU Logo" width="400" height="200"></a>
+        <p>Здравейте, казвам се Михаил Иванов и това е първият ми опит да направя <em>свой</em> уебсайт.<br>Студент съм във <a class="uni" href="https://www.vfu.bg/" target="_blank">Варненски Свободен Университет</a>.</p>
+        <h3>Защо този сайт?</h3>
+
+        <div class="lists">
+            <p>Защото <strong>само</strong> тук ще откриете проекти, върху които съм работил този семестър:</p>
+            <ul>
+                <li>Начална страница</li>
+                <li>Етикет с хранителни стойности</li>
+                <li>Финансов отчет</li>
+                <li>Кафе меню</li>
+                <li>Галерия със снимки</li>
+                <li>Tribute страница на "Параграф 22"</li>
+                <li>Анкетна карта</li>
+            </ul>
+        </div>
+        <hr>
+        <div>
+            <table border="1">
+                <caption>Изпълнена ли е заявката?</caption>
+                <tr>
+                    <th>Условие</th>
+                    <th>Резултат</th>
+                </tr>
+                <tr>
+                    <td>Заглавия</td>
+                    <td>Няколко</td>
+                </tr>
+                <tr>
+                    <td>Текст</td>
+                    <td>Има</td>
+                </tr>
+                <tr>
+                    <td>Таблица</td>
+                    <td>Разбира се</td>
+                </tr>
+                <tr>
+                    <td>Списък</td>
+                    <td>По-горе</td>
+                </tr>
+                <tr>
+                    <td>Изображение</td>
+                    <td>Дори с хиперлинк</td>
+                </tr>
+                <tr>
+                    <td>Форма</td>
+                    <td>Кратка и ясна</td>
+                </tr>
+                    
+            </table>
+        </div>
+        <hr>
+        <form>
+            <input type="text" placeholder="Тук изпробваме placeholders"><br>
+            <button type="submit">Тест</button>
+        </form>
+
+        </main>
+        <footer>
+            <p><small>Михаил Иванов<br>233010005</small></p>
+        </footer>
+    </body>
+</html>

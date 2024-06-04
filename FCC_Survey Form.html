@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/FCC_Survey_Form_Styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <h1>Анкета</h1>
+            <!-- NavBar Start -->
+            <nav>
+              <ul class="sidebar">
+                  <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                  <li><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+                  <li><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+                  <li><a href="FCC_Menu.html">Кафе Меню</a></li>
+                  <li><a href="FCC_Photo_gallery.html">Галерия</a></li>
+                  <li><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+                  <li><a href="FCC_Survey Form.html">Анкета</a></li>
+              </ul>
+              <ul>
+                  <li><a href="index_new.html">Начало</a></li>
+                  <li class="hideOnMobile"><a href="FCC_CSS_Nutrition_Label.html">Етикет хранителна стойност</a></li>
+                  <li class="hideOnMobile"><a href="FCC_Balance_Sheet.html">Финансов отчет</a></li>
+                  <li class="hideOnMobile"><a href="FCC_Menu.html">Кафе Меню</a></li>
+                  <li class="hideOnMobile"><a href="FCC_Photo_gallery.html">Галерия</a></li>
+                  <li class="hideOnMobile"><a href="Project 2 - Tribute Page - Catch 22.html">"Параграф 22"</a></li>
+                  <li class="hideOnMobile"><a href="FCC_Survey Form.html">Анкета</a></li>
+                  <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+              </ul>
+          </nav>
+          <script>
+              function showSidebar() {
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'flex'
+              }
+  
+              function hideSidebar() {
+                  const sidebar = document.querySelector('.sidebar')
+                  sidebar.style.display = 'none'
+              }
+          </script>
+          <!-- NavBar End -->
+    </header>
+    <main>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">A little survey to check whether I've done well</p>
+      <img src="https://www.nist.gov/sites/default/files/images/2022/03/29/Survey.png" alt="survey image" width="10%" class="center"/>
+      <form id="survey-form">
+        <label id="name-label" for="name">Name: 
+          <input id="name" type="text" placeholder="Enter your name" required></input>
+        </label>
+        <label id="email-label" for="email">Email: 
+          <input id="email" type="email" placeholder="Enter your email" required></input>
+        </label>
+        <label id="number-label" for="number">Age (optional): 
+          <input id="number" type="number" placeholder="Age" min="13" max="120"></input>
+        </label>
+        <label id="dropdown-label" for="dropdown">My gender is:
+        <select id="dropdown" name="dropdown">
+          <option value="">(select one)</option>
+          <option value="1">Female</option>
+          <option value="2">Male</option>
+        </select>
+        </label>
+        <fieldset>
+          <legend>This website is: </legend>
+          <label id="opinion-label" for="great"><input id="great" name="choice" type="radio" value="1" class="inline">Best thing I've seen</input></label>
+          <label id="opinion2-label" for="bad"><input id="bad" name="choice" type="radio" value="2" class="inline" disabled>I can make a better one</input></label>
+        </fieldset>
+        <fieldset>
+          <legend>I am filling out this form becasue: </legend>
+          <label id="reson1-label" for="reson1"><input id="reason1" name="reason" type="radio" value="1" class="inline">I want to contribute to the betterment of humanity</input></label>
+          <label id="reason2-label" for="reason1"><input id="reason2" name="reason" type="radio" value="2" class="inline">The author made me do it</input></label>
+        </fieldset>
+        <fieldset>What can I do to improve your experience?
+          <label id="checkbox1-label" for="checkbox1">
+            <input id="checkbox1" name="checkbox1" type="checkbox" value="1" class="inline">Nothing</input>
+          </label>
+          <label id="checkbox2-label" for="checkbox2">
+            <input id="checkbox2" name="checkbox2" type="checkbox" value="2" class="inline">Provide food</input>
+          </label>
+        </fieldset>
+        <label id="textarea-label" for="textarea">Additional comments: 
+        <textarea id="textarea" name="textarea" type="textarea" placeholder="Pa ra pa pa paaa I'm lovin' it" rows="3" cols="30"></textarea>
+        </label>
+        <input id="submit" type="submit" name="submit" value="Submit"></input>
+      </form>
+    </main>
+    <footer>Your answers will not be recorded. This survey is being conducted for training purposes only.</footer>
+  </body>
+</html>
